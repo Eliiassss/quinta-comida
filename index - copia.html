@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male que come?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            color: #fff;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        #colorfulButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            margin-top: 20px;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        #colorfulButton:hover {
+            background-color: #c0392b; /* Cambia el color al pasar el mouse */
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hola nene, ¿qué va a comer male?</h1>
+        <p>------------</p>
+        <button id="colorfulButton" onclick="redirectToWhatsApp()">Apreta aquí para responder</button>
+        <footer>&copy; Página by Huevo</footer>
+    </div>
+
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = "https://api.whatsapp.com/send?phone=+3482632443&text=hola%20huevo,mi%20querido%20amigo%20del%20alma%20yo%20estoy%20bien,vos%20como%20estas?%20que%20tal%20tu%20dia?%20,%20te%20confirmo%20que%20male%20va%20a%20comer........(no%20cuenta%20gustavo%20como%20opcion)";
+        }
+    </script>
+
+</body>
+</html>
